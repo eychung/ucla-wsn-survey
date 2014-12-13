@@ -1,0 +1,608 @@
+%% LyX 2.1.0 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[twocolumn,english,journal]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\definecolor{page_backgroundcolor}{rgb}{1, 1, 1}
+\pagecolor{page_backgroundcolor}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage[unicode=true,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=1,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+\hypersetup{pdftitle={Your Title},
+ pdfauthor={Your Name},
+ pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxcode}
+{\par\begin{list}{}{
+\setlength{\rightmargin}{\leftmargin}
+\setlength{\listparindent}{0pt}% needed for AMS classes
+\raggedright
+\setlength{\itemsep}{0pt}
+\setlength{\parsep}{0pt}
+\normalfont\ttfamily}%
+ \item[]}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+
+\makeatother
+
+\begin{document}
+
+\title{Using Wireless Sensor Networks to Save Lives from Pollution Terrorism}
+
+
+\author{Eric Chung, Gabriel Alsheikh}
+\maketitle
+\begin{abstract}
+Today, pollution is a significant consideration in public health due
+to the immense burning of fossil fuels and other chemicals for industries,
+power generation, vehicles and a multitude of other uses. This is
+especially the case in urbanized areas where people and sources of
+pollutants are densely concentrated. In this paper, we cover several
+works on wireless sensor networks and pollution monitoring. We focus
+on a prominent work on pollution monitoring that involves a wireless
+sensor network with mobile and static node that is able to process
+and deliver information in real-time. We also cover other relevant
+and vital papers established in this area of technology, including
+different architectures and different deployment schemes (eg. public
+transportation, personal mobile devices, static nodes). We close our
+survey with a discussion of the state-of-the-art technologies in pollution
+monitoring wireless sensor networks, including both solved and existing
+problems, and our expectations of its future direction based on current
+developments and opportunities.\end{abstract}
+\begin{IEEEkeywords}
+Wireless Sensor Networks, Air Pollution
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Industrialization, increased energy use, traffic, and growing urban
+centers, among other factors have caused air pollution to be a serious
+issue in many countries not just for the environment, but public health.
+In the United States, 79\% of Americans live in urban areas \cite{us_census_bureau}
+and are subjected to a dramatically increased degree of air pollution
+than would exist outside urban and industrial centers. The US Environmental
+Protection Agency the six most common air pollutants are particulate
+matter, carbon monoxide, sulfur oxides, nitrogen oxides, ozone, and
+lead \cite{us_environmental_protection_agency}. In the United States,
+COPD, asthma, and other respiratory diseases plague millions of people.
+COPD is the third leading cause of death in the country \cite{american_lung_association.a}
+and 26 million Americans suffer from asthma. Air pollution is prominent
+in worsening symptoms and effects of these fatal diseases \cite{american_lung_association.b}.
+Studies have demonstrated results showing how destructive the effects
+of air pollution can be, particularly on those afflicted by respiratory
+illnesses in polluted metropolitan areas like Los Angeles \cite{usc_news}.
+
+Wireless sensor networks (WSNs) enable gathering data wirelessly from
+a large number of nodes in almost real-time. In a world of air pollution
+harming the environment and human health, there does not exist a strategy
+to thoroughly monitor air pollution over a wide area and in different
+urban settings. To contrast, current methods of pollution monitoring
+via expensive equipment at fixed locations or laboratory analysis
+are inefficient in providing an accurate image of air pollution across
+a broad range of environments even within a single city. The granularity
+is extremely coarse and available data points are limited and data
+collection times are spaced out. These methods\textquoteright{} primary
+disadvantages lie in the facts that they cannot usually be achieved
+in real-time and they involve extrapolating models that give a very
+imprecise, unreliable of pollution outside of the immediate area of
+where pollution data was collected. In addition, this data, as limited
+as it is, it also limited in its accessibility. However, WSNs allow
+for data at many points within a given area, real-time data collection
+and dissemination, and an effective scheme to monitor air pollution
+and formulate an accurate image of its proliferation and concentration.
+WSNs provide a high-granularity, real-time system that can provide
+high quantities of data in a dense area, which is necessary for effective
+awareness of air pollutants and their effect on health issues.
+
+In this paper, we present a survey on different strategies in which
+WSNs are used for pollution monitoring. We discuss the various advantages
+and challenges involved in a wireless sensor network. This includes
+the architecture of wireless sensor networks and how it can produce
+a successful solution for effective pollution monitoring. We highlight
+various deployment schemes to demonstrate the effectiveness and feasibility
+of pollution monitoring WSNs. Our focus will be on analyzing the different
+solutions and strategies that have been proposed, and additionally
+on evaluating their benefits in solving the pollution monitoring problem.
+Critical emphasis will be placed on mobile, portable solutions that
+can be employed on public transportation or individual users, as these
+appear to be the most promising strategies. 
+
+
+\section{Key Paper}
+
+The paper \textquotedblleft Air Pollution Monitoring and Mining Based
+on Sensor Grid in London\textquotedblright{} \cite{y._ma} provides
+a very comprehensive and detailed work on a wireless sensor network
+for air pollution monitoring. The goal is to develop low-cost, pervasive
+sensor networks to gather real-time air pollution data from roadways
+over a large area. This work is motivated by the high levels of air
+pollution as a result of road traffic, which contributes 97\% of CO
+and 75\% of NOX emissions in the city, along with lead, ozone, benzene,
+and particulate matter. All of these have a seriously detrimental
+effect on the environment and human health. In addition, existing
+monitoring stations are often only at pollution hotspots, may be several
+kilometers apart from each other, and the data is processed offline,
+which limit such a system\textquoteright s effectiveness in thoroughly
+monitoring air pollution. The data gaps in pollution monitoring have
+produced three major barriers: the lack of validation of traffic and
+pollution models, inability to determine individual exposure to pollutants,
+and a lack of integrated traffic and environmental control. These
+concerns can be addressed by generating new types of useful data and
+more data at both the temporal and spatial levels. The work proposes
+the Mobile Discovery Net (MoDisNet), a low-cost mobile monitoring
+system to develop a grid structure to improve monitoring of harmful
+environmental gases.
+
+The MoDisNet air pollution monitoring system has an infrastructure
+based on the use of vehicles as a platform for environment sensors
+along with static sensors placed at roadside locations in a grid setting.
+More specifically, the system has a two-layer network architecture
+with one layer being the Mobile Sensor Nodes (MSN) and the other being
+the Static Sensor Nodes (SSN). The data collected by MSNs is sent
+to SSNs for data processing, storage, receiving, and uploading. This
+is shown in the figure \cite{y._ma}.
+
+\begin{center}
+\begin{figure}[tbh]
+\begin{lyxcode}
+\includegraphics[width=1\columnwidth]{\string"Figure 1\string".eps}
+\end{lyxcode}
+\centering{}\protect\caption{MoDisNet network architecture}
+\end{figure}
+
+\par\end{center}
+
+The GUSTO (Generic Ultraviolet Sensor Technologies and Observations)
+sensors designed and used in this system are capable of simultaneous
+detection of multiple pollutants, real-time data collection, low cost
+per unit, data robustness, and high accuracy of pollution concentrations.
+When a vehicle passes a sensor, the detected pollutants (SO2, NOx,
+O3, etc.) exhausted from the vehicle are detected by the GUSTO sensor
+and the data is processed to determine the concentration. The nodes
+in the wireless sensor network communicate each other as a P2P (peer-to-peer)
+network. Due to the gigabit magnitude of data transferred per sensor
+each day, the sensors must store and communication the information,
+which is filtered and processed before being stored in a backend repository.
+The GUSTO sensors connect to the MoDisNet grid through Sensor Gateways
+according to different wireless protocols (WiFi, Zigbee \cite{d._a._jadhav},
+etc.). The sensors send their data to the gateways across the network,
+in a multi-hop manner across sensors if necessary. Meanwhile, the
+SGs are responsible for handling the data between the sensors and
+the backend data warehouse and for load balancing of the data traffic.
+The backend warehouse stores the data from the sensors along with
+other data such as traffic, weather, and health information, which
+can be used by the grid to create air pollution and traffic models.
+In addition, it can provide real-time information to end users about
+the current environmental conditions. Figure 2 \cite{y._ma} shows
+the whole MoDisNet sensor network architecture.
+
+\begin{figure}[t]
+\includegraphics[width=1\columnwidth]{\string"Figure 2\string".eps}
+
+\begin{centering}
+\protect\caption{MoDisNet sensor grid architecture}
+
+\par\end{centering}
+
+\end{figure}
+
+
+Data mining techniques are critical to the research and study of the
+relationship between the environment and road transportation. Often,
+end users will have to query data from the backend data storage to
+understand the current environmental setting. In this area, centralized
+data mining is implemented in the backend with the purpose of discovering
+long-term pollution and traffic patterns and finding the relationship
+between specific traffic and pollution events. P2P-based distributed
+data mining is implemented in the sensors, as it depends on data collected
+and stored by each sensor in real-time. By mining this real-time data
+straight from the sensors, a quick analysis can be made on the pollution
+concentration and as a result, on the traffic situation as well. However,
+the results may be simple and not as thorough and accurate as the
+centralized mining results. There is also integrated data mining,
+where the distributed mining results match a pattern retrieved from
+the centralized mining leading to the assumption that some event will
+happen, or there is a new result that leads to an updated, more accurate
+model in the centralized mining area. Data mining in sensor networks
+faces challenges such as the resource constraints on the sensors (battery,
+communication bandwidth, etc.), the mobility of sensor nodes which
+adds complexity to data collection and analysis, and sensor data is
+transferred in real-time over the network which cannot make use of
+traditional backend schemes. Distributed data mining can address these
+problems by using distributed resources in an optimal manner, with
+focuses on intelligent data collection schemes to reduce volume, optimized
+node organization schemes to increase homogeneity of the data, and
+efficient mining algorithms to reduce computing complexity. 
+
+MoDisNet has a simulation platform which allows it to give an evaluation
+of the hardware/software design, with a focus on simulation the wireless
+communication processing, the sensor units,upper and lower layer algorithms
+and programs, and the cooperation between the MSN and SSN types of
+sensors. The simulation can be visualized to demonstrate the effectiveness
+of the configuration of the system and performance of the routing
+protocols and data transfer. The authors simulate an 18 sensor node
+(12 SSNs and 6 MSNs) which can send data bidirectionally to sensors
+within range. Air pollution data for four pollutants is taken at every
+minute in an urban setting, showing that the system can receive and
+send messages from node to node with minimal collision and packets
+lost. Another evaluation demonstrates the ability of MoDisNet in a
+real-time pollution data monitoring scenario, based on actual data
+collected from a sensor grid. The evaluation is not only able to determine
+where there is high pollution, but which gases contribute to the pollution
+as well, which can be organized into pollution clouds. Figure 3 \cite{y._ma}
+shows the map with the pollution clouds at different times of the
+day, while Table 1 \cite{y._ma} exhibits what each of the clouds
+mean. For example, the results show that at 9:00, the pollution is
+greatest near schools (circles) and main roads, at 15:30 by the schools
+and factory (square), and at 17:00 by the hospitals (ovals), factory,
+and main roads. 
+
+\noindent 
+\begin{figure*}[t]
+\begin{centering}
+\includegraphics{\string"Figure 3\string".eps}
+\par\end{centering}
+
+\begin{centering}
+\protect\caption{Pattern recognition for high air pollution level areas}
+
+\par\end{centering}
+
+\end{figure*}
+
+
+\begin{table}[tbh]
+
+
+\protect\caption{Pollution patterns}
+
+
+\includegraphics[width=1\columnwidth]{\string"Table 1\string".eps}
+\end{table}
+
+
+
+\section{Additional Papers}
+
+In this section, we will address specific additions that the key paper
+does not cover but are an area of interest as research can be furthered
+in these directions to improve WSN systems as a whole. Firstly, MoDisNet
+does not focus on different deployment mediums. There are numerous
+types as will be mentioned later in this survey, but we focus on a
+mobile phones for the next part. However, there are pros and cons
+from deviating from the traditional state of the art system. Secondly,
+we evaluate a newer routing protocol presented in another paper that
+outperforms current WSNs in respect to energy efficiency. Lastly,
+we examine an improved clustering algorithm that also focuses on reducing
+energy consumption.
+
+
+\subsection{Deployment via Mobile Phones}
+
+In \textquotedblleft Wireless Sensor Network Deployment in Mobile
+Phones Assisted Environment\textquotedblright{} \cite{z._ruan}, the
+idea behind using mobile phones as a deployment medium sheds a new
+light from the current state of the art. The benefits of using mobile
+phones include reducing the number of WSN units deployed, which also
+corresponds to the decrease costs in equipment and maintenance of
+the units. Rather than replacement of WSNs, the paper suggests that
+mobile phones can serve as a complement to existing WSN units and
+integration through their framework seamlessly. In order to prevent
+quality loss of areas not covered, the paper proposes a cost-effective
+sensor deployment algorithm that covers the necessary areas to meet
+application needs. This greedy algorithm determines where a mobile
+sensor should be placed on the grid based on the missing coverage
+probability and sensing quality. It focuses on areas where coverage
+is least effective and iterates through the list of grid points until
+all points are covered or an upper bound of sensors is met. In order
+to evaluation the effectiveness of the system, the paper introduces
+a sensing quality evaluation model and a mobility prediction model.
+
+\begin{figure}[t]
+\includegraphics[width=1\columnwidth]{\string"Figure 4\string".eps}
+
+\begin{centering}
+\protect\caption{System architecture}
+
+\par\end{centering}
+
+\end{figure}
+
+
+Building off the model presented by the current state of the art,
+this paper reflects the network structure presented in the key paper
+except where mobile phones replace the need for sensors in certain
+areas as shown in Figure 4 \cite{m._razzaque}. By reducing the overall
+cost of the system, the use of mobile phones introduce an array of
+sensor quality issues due to trustworthiness of users and data quality
+on phones for instance.
+
+
+\subsection{Improvement on Routing Protocols}
+
+A major networking issue in all WSNs is the unexpected downtime for
+a node, so WSN systems rely on an underlying routing protocols tailored
+to delay-sensitive networks. An interesting approach to load balance
+the system while providing fault tolerance is to use the knowledge
+of neighboring nodes to determine the next course of action. In \textquotedblleft QoS-aware
+distributed adaptive cooperative routing in wireless sensor networks\textquotedblright{}
+\cite{m._razzaque}, the authors propose a distributed adaptive cooperative
+routing protocol (DACR) to answer the issue of cooperative routing
+in WSNs. The main idea is to leverage cooperative communication and
+exploit knowledge of delay- and energy-aware routes in order to make
+trade-offs between reliability and delay. As each node in the system
+is not reliable for whatever reason, the underlying network protocol
+must be able to continue the operations of the whole system and transmit
+the necessary sensor data despite a node failure. In order to maintain
+a reliable system, DACR effectively determines, at each hop, which
+transmission mode, direct or relay, to pick in order for the system
+to continue running smoothly.
+
+Compared to state of the art protocols in current WSN systems, DACR
+operates better in energy-distribution and load balancing using its
+network traffic prediction approach. DACR, like AODV, uses proactive
+relay selection, which is shown to improve QoS performance compared
+to using reactive selection. The paper highlights how the use of cooperative
+relay nodes reduce computation cost, leading to higher energy cost
+performance. In detail, the number of route reconstructions and packet
+retransmissions is minimized by the dynamic decisions made at each
+node.
+
+
+\subsection{Zone Partitioning in WSNs}
+
+The paper, \textquotedblleft Power-Efficient Zoning Clustering Algorithm
+for Wireless Sensor Networks\textquotedblright{} \cite{f.-e._bai},
+presents a clustering routing algorithm, called PEZCA, to improve
+on the energy-efficiency of WSNs. It works on the principles of Low-Energy
+Adaptive Clustering Hierarchy (LEACH) and Power-Efficient Gathering
+in Sensor Information System (PEGASIS) and builds off on current state
+of the art routing protocols. LEACH randomly selects cluster head
+nodes and rotates the responsibility in order to allow for even energy
+dissipation. As an improvement of LEACH, PEGASIS allows for chaining
+and data aggregation. PEZCA, which takes ideas from both, can be thought
+of as partitioning the nodes into fan-shaped regions. Clusters of
+nodes that lie closer to the base station are smaller, whereas those
+farther away are larger. The idea is to reduce inter-cluster relay
+traffic, which in turn lowers energy consumption.
+
+Reduced energy consumption using PEZCA compares better against current
+state of the art clustering algorithms, which share typically longer
+chains among cluster heads. By allowing different cluster sizes and
+forming a fan-shaped configuration as shown in Figure 5 \cite{f.-e._bai}
+originating from the base station, energy consumption is balanced
+amongst the system.
+
+\begin{figure}[tbh]
+\includegraphics[width=1\columnwidth]{\string"Figure 5\string".eps}
+
+\protect\caption{Overview of PEZCA}
+
+
+\end{figure}
+
+
+
+\section{State of the Art}
+
+Current WSN architectures for air pollution monitoring systems have
+static or mobile energy-efficient sensors that are connected to a
+backend infrastructure. These nodes upload their collected sensor
+information and operate only when needed in order to save energy.
+Generally, there are three configurations for when a WSN node should
+upload: time-driven, event-driven, and query-driven. Time-driven uploads
+occur over a set interval. Whereas, event-driven uploads happen in
+response as an alert to a particular event, and query-driven is when
+the sink requests for the data. Although a given node can only record
+pollution information for its own respective zone, together these
+nodes can collaborate to generate a map that covers a wide scale area.
+Applications then retrieve a summary of the processed data from the
+backend servers for the users.
+
+Within a WSN unit, which can be mounted on a sensing station as shown
+in Figure 6 \cite{g._barrenetxea}, the core components include a
+power source, a radio receiver, and a sensor board. In most cases,
+there are usually two batteries attached to the sensor unit.
+
+\begin{figure}[tbh]
+\includegraphics{\string"Figure 6\string".eps}
+
+\protect\caption{Sensing station}
+
+
+\end{figure}
+
+
+
+\subsection{Problems Unsolved}
+
+The most common issues that arise with any WSN system and remain unsolved
+include communication bandwidth and scalability. 
+
+
+\subsubsection{Communication Bandwidth}
+
+Communication bandwidth becomes an issue if the system prefers quality
+data where a high frequency of sensor information updates need to
+be perpetually sent between WSN nodes and the servers or if a sink
+node has too many incoming connections. As a result, a build up of
+data packets at network bottlenecks will slow down system operations
+and provide delayed analysis for the end users. This challenge was
+deal with by the use of various routing algorithms \cite{m._razzaque}
+that have built in congestion control mechanisms that alleviate hot
+spot traffic by rerouting traffic to less impacted data paths. 
+
+
+\subsubsection{Scalability}
+
+As WSNs can grow large in size, the challenge of scalability arises.
+Some solutions that are offered include clustering algorithms such
+that geographically close nodes form a cluster and routing algorithms
+that focus on load balancing the system. In order to efficiently communicate
+data to the sink, cluster heads are identified within the network
+structure to propagate sensor information collected by the nodes that
+they are responsible for. If a cluster head goes down, the system
+can even elect a new replacement cluster head to represent the group
+of nodes. There is currently a large list of clustering algorithms
+\cite{v._kumar}, which differ on how clusters are formed, how cluster
+heads are selected, and how nodes propagate data within clusters.
+Depending on the application needs, one algorithm may be preferenced
+over another.
+
+
+\subsection{Challenges}
+
+Many challenges still remain problematic for the state of the art
+architecture for WSNs, in which the main issues are power, robustness,
+and storage space. Although the state of the art architecture tries
+to approach these problems through alternative means, these challenges
+remain fundamental in WSN systems and solid solutions for the underlying
+problems are still sought after. 
+
+
+\subsubsection{Power}
+
+Energy is the fundamental constraint in any WSN system. A node uses
+energy every time it collects data and transmits it, so unless the
+WSN unit is connected to a reliable battery source, the device should
+only be powered on when it needs to. In order to provide quality sensor
+data, the state of the art WSN nodes must transmit frequently or perform
+a tradeoff with power. If a static node runs out of power, the battery
+must be physically replaced in order for the unit to remain operational.
+As for mobile nodes, the battery should not interfere with other operations
+of the integrated device. Attempts have been made to solve the efficient-energy
+coverage (EEC) problem by designing better routing, clustering, and
+scheduling \cite{j-w._lee} algorithms.
+
+
+\subsubsection{Robustness}
+
+Because WSN nodes can fail without reason, the system needs to properly
+accommodate for these occurrences. If a node that is responsible for
+relaying data from a group of other nodes fails, these other nodes
+need to propagate their data through other network paths. The node
+would then need to be physically replaced by a functional unit in
+order to continue recording information for that area. 
+
+
+\subsubsection{Storage Space}
+
+Because current state of the art nodes are resource-limited devices,
+storing large amounts of data becomes an issue. Due to power constraints,
+uploading sensor information frequently is inadvisable, so a unit
+must be able to maximize its storage per push to sink nodes. An alternative
+approach to handle the storage space issue is to distribute the data
+to local nodes through a cooperative storage mechanism \cite{a._awad}.
+
+
+\section{Future Direction}
+
+As far as research goes on WSNs for pollution applications, improvements
+in deployment medium, network protocols, data processing, and hardware
+technologies contribute to developing a better system for monitoring
+the air quality in our environment.
+
+
+\subsection{Deployment Mediums}
+
+Moving away from the traditional deployment of static nodes, mobilizing
+the nodes becomes a step forward for the research community. In specific,
+the idea of integrating sensors on bikes \cite{k._g._sadik}, on buses
+\cite{s._devarakonda}, in cars \cite{b._hull}, \cite{w._tsujita},
+and with phones \cite{d._hasenfratz} is becoming a greater interest
+as it tackles the problem of monitoring air pollution in another light.
+By personalizing the technology, people \cite{a._t._campbell} are
+able to become more aware of their health as a result of knowing the
+air quality around them. However, this focus does not take away the
+important operations current pollution monitoring systems perform.
+Valuable sensor information will continue to be sent to backend servers
+for data analysis.
+
+
+\subsection{Network Protocols}
+
+For WSNs to be efficient, new network protocols must be tailor made
+to fit the specific needs and limitations of a system. The location
+of nodes and their estimated time spent online influence how and where
+data packets should be processed, which becomes a study into routing
+algorithms. In specific, researchers have begun looking into new clustering
+\cite{a._del_coso} and scheduling algorithms for how groups of related
+nodes should be identified and how often nodes should propagate their
+data to the next node.
+
+
+\subsection{Data Processing}
+
+In order to manage the large amount of incoming data to sink servers,
+the system must be able to efficiently process all this sensor information.
+Because storage space within WSN units is an issue, the unit should
+identify critical sensor inputs and filter out data impurities \cite{k._k._khedo}.
+Future research work should focus on techniques for identifying outliers
+versus actual change in air quality in order to improve the accuracy
+in data processing. On a similar note, the unit should only activate
+to capture as often as the application sees fit. Therefore, improvements
+in scheduling algorithms will help manage how much outgoing data will
+be processed. 
+
+
+\subsection{Hardware Technologies}
+
+The most recent major improvement in hardware technology for our study
+was the use of MEMS (micro electromagnetic systems). Due to their
+robustness and small size, they can produce a two-fold advantage over
+existing gas sensors: more accurate air pollutant measurements and
+a much smaller size. Due to this, it makes further miniaturization
+of these pollution sensors possible. This is particularly helpful
+for personal, mobile, and non-obstructive sensors that can even be
+toted with end users without creating any impediment. Overall, MEMS-based
+gas sensors can revolutionize pollution monitoring wireless sensor
+networks. 
+
+
+\subsection{Public Policy}
+
+As pollution monitoring becomes increasingly more effectives, thorough,
+and convincing, it will become more difficult to ignore the harmful
+effects of air pollution, not only at the social level, but at the
+policymaking level as well. If public policymakers are presented with
+irrefutable and large-scale evidence of the correlation between air
+pollution and respiratory disease, then it will become more likely
+for them to support policies that would lead to technologies, systems,
+and practices that could improve air quality and reduces its harm
+on people at risk of or suffering from respiratory disease. In this
+manner, there will be a much stronger push for greener approaches
+in regards to air and environmental quality. 
+
+
+\section{Conclusions}
+
+In the modern era, pollution is becoming extremely harmful to human
+health. Despite its importance, we lacked a reasonably effective technology
+to monitor air quality until the introduction of pollution monitoring
+wireless sensor networks. Our survey discussed prominent works in
+this emerging technology. We place particular detail on the work describing
+the Mobile Discovery Net, which employs mobile and static nodes in
+a sensor network to collect air quality data and process it. We also
+covered other works on pollution monitoring in order to exhibit other
+schemes and strategies that exist in this area, such as deployment
+via mobile phones. In addition, we discussed the state-of-the-art
+in this field, with its various innovations and existing challenges.
+We also wrote on the future direction for this exciting technology
+in terms of usage and future innovation. Overall, the future is bright
+for this technology and hopefully it will continue to broaden our
+understanding of air pollution and reduce the effects of poor air
+quality on human health. 
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
