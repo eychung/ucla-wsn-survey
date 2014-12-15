@@ -1171,8 +1171,8 @@ Our Perspective
 
 \begin_layout Standard
 We believe that research on WSNs should be focused more at an individual
- level in the light of consumer-friendly devices enabling non-intrusive
- portability and providing quality updates to local nodes.
+ level; consumer-friendly devices enabling non-intrusive portability and
+ providing quality updates to local nodes.
  Before, industry and research made improvements in this field to provide
  a general overview for the air pollution within a large area, in which
  users must query a specific area to find out its respective pollution informati
@@ -1183,9 +1183,7 @@ g knowledge of pollution for large areas.
  quality information of the immediately surrounding area.
  That said, the users should be able to fine-tune pollution detection settings
  in order to have more updated and accurate data rather than to receive
- an averaged representative value for an area of interest.
- After all, by the end of the day, it is the end users that should be well
- informed of the pollution levels surrounding them.
+ an averaged representitive value for an area of interest.
 \end_layout
 
 \begin_layout Section
