@@ -651,6 +651,14 @@ key "m._razzaque"
  By reducing the overall cost of the system, the use of mobile phones introduce
  an array of sensor quality issues due to trustworthiness of users and data
  quality on phones for instance.
+ This paper proposes an ambitious deployment scheme for deploying nodes
+ in a WSN, which can be easily employed for pollution monitoring.
+ It enables the users to actively provide air quality data in an unobtrusive
+ manner, through the use of their mobile phones and a small, attached sensor
+ device.
+ Since nodes at static locations is not sufficient to acquire a thorough
+ view of air pollution, the use of mobile phones for this purpose can enable
+ data acquisition over a much greater area, rather than at specific points.
 \end_layout
 
 \begin_layout Subsection
@@ -677,7 +685,7 @@ key "m._razzaque"
  The main idea is to leverage cooperative communication and exploit knowledge
  of delay- and energy-aware routes in order to make trade-offs between reliabili
 ty and delay.
- As each node in the system is not reliable for whatever reason, the underlying
+ If a node in the system is not reliable for whatever reason, the underlying
  network protocol must be able to continue the operations of the whole system
  and transmit the necessary sensor data despite a node failure.
  In order to maintain a reliable system, DACR effectively determines, at
@@ -695,6 +703,15 @@ Compared to state of the art protocols in current WSN systems, DACR operates
  cost, leading to higher energy cost performance.
  In detail, the number of route reconstructions and packet retransmissions
  is minimized by the dynamic decisions made at each node.
+ This work is quite important in regards to pollution monitoring WSNs because
+ a network of this large of a scale requires minimal delay to ensure real-time
+ data tranmission and the ability to ensure data in transmitted in case
+ of a node failure.
+ It also allows for load balancing using its traffic predictional scheme,
+ so that congestion does not occur when data must hop multiple nodes to
+ its destination in an ad hoc network.
+ However, if this approach mispredicts the expected traffic, it could lose
+ large amounts of critical air pollution data due to network congestion.
 \end_layout
 
 \begin_layout Subsection
@@ -740,6 +757,15 @@ key "f.-e._bai"
 
  originating from the base station, energy consumption is balanced amongst
  the system.
+ This paper proposes an invaluable scheme for effectively manging energy
+ usage across an air pollution WSN.
+ Since energy-efficiency is a critical constraint in operating WSNs, PEZCA
+ can help nodes across the grid last longer on a battery charge and can
+ reduce congestion by reducing inter-cluster traffic.
+ However, it does not appear to take into account traffic and congestion
+ at the level of each individual cluster, and larger clusters with more
+ nodes may find it difficult to handle data traffic to the cluster head
+ node.
 \end_layout
 
 \begin_layout Standard
@@ -890,9 +916,10 @@ Scalability
 
 \begin_layout Standard
 As WSNs can grow large in size, the challenge of scalability arises.
- Some solutions that are offered include clustering algorithms such that
- geographically close nodes form a cluster and routing algorithms that focus
- on load balancing the system.
+ Some solutions that are offered include clustering alglose to large amounts
+ of data loss due to congestionorithms such that geographically close nodes
+ form a cluster and routing algorithms that focus on load balancing the
+ system.
  In order to efficiently communicate data to the sink, cluster heads are
  identified within the network structure to propagate sensor information
  collected by the nodes that they are responsible for.
@@ -1147,10 +1174,13 @@ WSN in Computer Science
 \begin_layout Standard
 The application of wireless sensor networks in computer science is not limited
  to air pollution, which is the specific focus in our paper; its usefulness
- expands to enemy detection in military, traffic congestion, identification
- of occupied parking spots, etc.
+ expands to early warning detection in military defense, monitoring and
+ resolving traffic congestion, identification of occupied parking spots,
+ and much more.
  In every case, data must be efficiently routed back to the end user.
- As a result, efficient network routing becomes a big part in research.
+ As a result, efficient network routing becomes an important focus in research,
+ especially since pollution monitoring WSNs, for exapmle, may exist over
+ a city-sized grid with thousands of nodes.
  In specific, the research of ad hoc networks in computer science pertains
  to this survey as the network architecture must properly reconfigure as
  nodes are added and removed from the system.
