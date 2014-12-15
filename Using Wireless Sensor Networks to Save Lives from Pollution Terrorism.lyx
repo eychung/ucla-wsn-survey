@@ -109,8 +109,8 @@ Today, pollution is a significant consideration in public health due to
  deliver information in real-time.
  We also cover other relevant and vital papers established in this area
  of technology, including different architectures and different deployment
- schemes (eg.
- public transportation, personal mobile devices, static nodes).
+ schemes (e.g.
+ public transportation, personal mobile devices, and static nodes).
  We close our survey with a discussion of the state-of-the-art technologies
  in pollution monitoring wireless sensor networks, including both solved
  and existing problems, and our expectations of its future direction based
@@ -329,7 +329,7 @@ The GUSTO (Generic Ultraviolet Sensor Technologies and Observations) sensors
  sensors must store and communication the information, which is filtered
  and processed before being stored in a backend repository.
  The GUSTO sensors connect to the MoDisNet grid through Sensor Gateways
- according to different wireless protocols (WiFi, Zigbee 
+ according to different wireless protocols (Wi-Fi, Zigbee 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "d._a._jadhav"
@@ -429,9 +429,10 @@ s on the sensors (battery, communication bandwidth, etc.), the mobility of
 
 \begin_layout Standard
 MoDisNet has a simulation platform which allows it to give an evaluation
- of the hardware/software design, with a focus on simulation the wireless
- communication processing, the sensor units,upper and lower layer algorithms
- and programs, and the cooperation between the MSN and SSN types of sensors.
+ of the hardware and software design.
+ It focuses on simulation the wireless communication processing, the sensor
+ units, upper and lower layer algorithms and programs, and the cooperation
+ between the MSN and SSN types of sensors.
  The simulation can be visualized to demonstrate the effectiveness of the
  configuration of the system and performance of the routing protocols and
  data transfer.
@@ -705,9 +706,9 @@ Compared to state of the art protocols in current WSN systems, DACR operates
  is minimized by the dynamic decisions made at each node.
  This work is quite important in regards to pollution monitoring WSNs because
  a network of this large of a scale requires minimal delay to ensure real-time
- data tranmission and the ability to ensure data in transmitted in case
+ data transmission and the ability to ensure data is transmitted in case
  of a node failure.
- It also allows for load balancing using its traffic predictional scheme,
+ It also allows for load balancing using its traffic prediction scheme,
  so that congestion does not occur when data must hop multiple nodes to
  its destination in an ad hoc network.
  However, if this approach mispredicts the expected traffic, it could lose
@@ -757,7 +758,7 @@ key "f.-e._bai"
 
  originating from the base station, energy consumption is balanced amongst
  the system.
- This paper proposes an invaluable scheme for effectively manging energy
+ This paper proposes an invaluable scheme for effectively managing energy
  usage across an air pollution WSN.
  Since energy-efficiency is a critical constraint in operating WSNs, PEZCA
  can help nodes across the grid last longer on a battery charge and can
@@ -896,7 +897,7 @@ Communication bandwidth becomes an issue if the system prefers quality data
  where a high frequency of sensor information updates need to be perpetually
  sent between WSN nodes and the servers or if a sink node has too many incoming
  connections.
- As a result, a build up of data packets at network bottlenecks will slow
+ As a result, a buildup of data packets at network bottlenecks will slow
  down system operations and provide delayed analysis for the end users.
  This challenge was deal with by the use of various routing algorithms 
 \begin_inset CommandInset citation
@@ -916,10 +917,9 @@ Scalability
 
 \begin_layout Standard
 As WSNs can grow large in size, the challenge of scalability arises.
- Some solutions that are offered include clustering alglose to large amounts
- of data loss due to congestionorithms such that geographically close nodes
- form a cluster and routing algorithms that focus on load balancing the
- system.
+ Some solutions that are offered include clustering algorithms such that
+ geographically close nodes form a cluster and routing algorithms that focus
+ on load balancing the system.
  In order to efficiently communicate data to the sink, cluster heads are
  identified within the network structure to propagate sensor information
  collected by the nodes that they are responsible for.
@@ -934,7 +934,7 @@ key "v._kumar"
 
 , which differ on how clusters are formed, how cluster heads are selected,
  and how nodes propagate data within clusters.
- Depending on the application needs, one algorithm may be preferenced over
+ Depending on the application needs, one algorithm may be selected over
  another.
 \end_layout
 
@@ -1179,7 +1179,7 @@ The application of wireless sensor networks in computer science is not limited
  and much more.
  In every case, data must be efficiently routed back to the end user.
  As a result, efficient network routing becomes an important focus in research,
- especially since pollution monitoring WSNs, for exapmle, may exist over
+ especially since pollution monitoring WSNs, for example, may exist over
  a city-sized grid with thousands of nodes.
  In specific, the research of ad hoc networks in computer science pertains
  to this survey as the network architecture must properly reconfigure as
