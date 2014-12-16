@@ -430,7 +430,7 @@ s on the sensors (battery, communication bandwidth, etc.), the mobility of
 \begin_layout Standard
 MoDisNet has a simulation platform which allows it to give an evaluation
  of the hardware and software design.
- It focuses on simulation the wireless communication processing, the sensor
+ It focuses on simulating the wireless communication processing, the sensor
  units, upper and lower layer algorithms and programs, and the cooperation
  between the MSN and SSN types of sensors.
  The simulation can be visualized to demonstrate the effectiveness of the
