@@ -138,9 +138,9 @@ key "us_census_bureau"
 
  and are subjected to a dramatically increased degree of air pollution than
  would exist outside urban and industrial centers.
- The US Environmental Protection Agency the six most common air pollutants
- are particulate matter, carbon monoxide, sulfur oxides, nitrogen oxides,
- ozone, and lead 
+ The US Environmental Protection Agency identified the six most common air
+ pollutants as particulate matter, carbon monoxide, sulfur oxides, nitrogen
+ oxides, ozone, and lead 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "us_environmental_protection_agency"
@@ -195,13 +195,13 @@ Wireless sensor networks (WSNs) enable gathering data wirelessly from a
  usually be achieved in real-time and they involve extrapolating models
  that give a very imprecise, unreliable of pollution outside of the immediate
  area of where pollution data was collected.
- In addition, this data, as limited as it is, it also limited in its accessibili
+ In addition, this data, as limited as it is, is also limited in its accessibili
 ty.
  However, WSNs allow for data at many points within a given area, real-time
  data collection and dissemination, and an effective scheme to monitor air
  pollution and formulate an accurate image of its proliferation and concentratio
 n.
- WSNs provide a high-granularity, real-time system that can provide high
+ WSNs provide a high-granularity, real-time system that can gather high
  quantities of data in a dense area, which is necessary for effective awareness
  of air pollutants and their effect on health issues.
 \end_layout
@@ -329,7 +329,7 @@ The GUSTO (Generic Ultraviolet Sensor Technologies and Observations) sensors
  sensors must store and communication the information, which is filtered
  and processed before being stored in a backend repository.
  The GUSTO sensors connect to the MoDisNet grid through Sensor Gateways
- according to different wireless protocols (Wi-Fi, Zigbee 
+ (SGs) according to different wireless protocols (Wi-Fi, Zigbee 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "d._a._jadhav"
@@ -579,7 +579,8 @@ key "z._ruan"
 \end_inset
 
 , the idea behind using mobile phones as a deployment medium sheds a new
- light from the current state of the art.
+ light from the current state of the art, which uses vehicles.
+ As in the key paper, it tries to leverage mobility.
  The benefits of using mobile phones include reducing the number of WSN
  units deployed, which also corresponds to the decrease costs in equipment
  and maintenance of the units.
@@ -697,7 +698,7 @@ ty and delay.
 \begin_layout Standard
 Compared to state of the art protocols in current WSN systems, DACR operates
  better in energy-distribution and load balancing using its network traffic
- prediction approach.
+ prediction approach than MoDisNet SGs' handler.
  DACR, like AODV, uses proactive relay selection, which is shown to improve
  QoS performance compared to using reactive selection.
  The paper highlights how the use of cooperative relay nodes reduce computation
@@ -883,9 +884,9 @@ Problems Unsolved
 \end_layout
 
 \begin_layout Standard
-The most common issues that arise with any WSN system and remain unsolved
- include communication bandwidth and scalability.
- 
+The most common issues that arise with any WSN system (not just specific
+ to the application of air pollution) and remain unsolved include communication
+ bandwidth and scalability.
 \end_layout
 
 \begin_layout Subsubsection
